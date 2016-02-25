@@ -7,12 +7,12 @@
 4. Use link provided by ngrok or equivalent application to obtain score on PageInsights
 
 ## Reviewing the Project
-All files for reviewing the project are located in **src** folder for readability
+All files for reviewing the project are located in **src** folder for readability.
 
-# Build Tools - Grunt
-Grunt was selected as a build tool for this project ecause of its mainstream use/popularity.
+# Optimization Methods
 
-## Grunt Plugins
+## Grunt Build Tool with Plugins
+
 The following grunt plugins were used in this project:
 
 1. imagemin - compress images
@@ -24,8 +24,6 @@ The following grunt plugins were used in this project:
 ## Running Grunt Build Tool
 1. Access main project folder repository
 2. Run "grunt" command to populate /dist folder from /src directory using grunt plugins
-
-# Optimizations
 
 ## Optimizations for Index.html
 1. Grunt build tool optimizations (see above)
@@ -50,4 +48,4 @@ The following optimizations were made in main.js to ensure project requirements.
 
 ### Further Optimizations
 
-Grunt build tools were used to optimize pizza.html and associated files
+Grunt build tools were used to optimize pizza.html and associated files.
