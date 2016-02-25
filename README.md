@@ -2,15 +2,17 @@
 
 ## Running the Project
 1. Check out repository
-2. Access /dist folder and run http-server/ngrok to view index.html and subsequent code
-3. Use link provided by ngrok to view score on PageInsights
+2. Access /dist folder
+3. Run local http server/secure tunnel application (http-server/ngrok used for this project) to view optimized index.html and subsequent code
+4. Use link provided by ngrok or equivalent application to obtain score on PageInsights
 
 ## Reviewing the Project
-1. All files for reviewing the project are located in **src** folder for readability
+All files for reviewing the project are located in **src** folder for readability
 
 # Build Tools - Grunt
+Grunt was selected as a build tool for this project ecause of its mainstream use/popularity.
 
-## Build Tools Used In This Project
+## Grunt Plugins
 The following grunt plugins were used in this project:
 
 1. imagemin - compress images
@@ -25,12 +27,13 @@ The following grunt plugins were used in this project:
 
 # Optimizations
 
-## Optimizations in Index.html
+## Optimizations for Index.html
 1. Grunt build tool optimizations (see above)
-2. async google analytics
+2. Async google analytics
 3. Resize images for proper sizing within index.html
 
-## Optimizations in src/views/main.js
+## Optimizations for src/views/main.js
+The following optimizations were made in main.js to ensure project requirements.
 
 ### updatePositions function
 1. Reduce number of pizzas from 200 to 40
@@ -39,7 +42,12 @@ The following grunt plugins were used in this project:
 
 ### resizePizzas function
 
-1. Followed Cameron's Udacity "Stop FSL" lesson for guidance to achieve below 1ms time to change pizza
+1. Follow Cameron's Udacity "Stop FSL" lesson for guidance to achieve below 1ms time to change pizza
+(see Lesson 5, Browser Rendering Optimization, Project P4 for more information)
 2. Remove determineDx requirement and change switch statement to return a width
-3. Apply width via subsequent 'for' loop
+3. Apply newWidth via subsequent 'for' loop
 4. Utilize 'use strict' for faster runtime
+
+### Further Optimizations
+
+Grunt build tools were used to optimize pizza.html and associated files
