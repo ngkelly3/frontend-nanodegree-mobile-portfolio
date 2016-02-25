@@ -1,0 +1,28 @@
+{
+  "name": "frontend-nanodegree-mobile-portfolio",
+  "version": "1.0.0",
+  "description": "Website Optimization",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngkelly3/frontend-nanodegree-mobile-portfolio.git"
+  },
+  "author": "Kelly Ng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ngkelly3/frontend-nanodegree-mobile-portfolio/issues"
+  },
+  "homepage": "https://github.com/ngkelly3/frontend-nanodegree-mobile-portfolio#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-htmlmin": "^0.6.0",
+    "grunt-contrib-imagemin": "^1.0.0",
+    "grunt-critical": "^0.2.0"
+  },
+  "dependencies": {
+    "imagemin-mozjpeg": "^5.1.0"
+  }
+}
