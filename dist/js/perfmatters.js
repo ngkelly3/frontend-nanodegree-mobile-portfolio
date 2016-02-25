@@ -1,0 +1,2 @@
+function logCRP(){var e=window.performance.timing,n=e.domContentLoadedEventStart-e.domLoading,t=e.domComplete-e.domLoading,o=document.getElementById("crp-stats");o.textContent="DCL: "+n+"ms, onload: "+t+"ms"}window.addEventListener("load",function(e){logCRP()});
+//# sourceMappingURL=../../path/to/sourcemap.map
