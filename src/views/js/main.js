@@ -503,6 +503,8 @@ function logAverageFrame(times) { // times is the array of User Timing measureme
     }
     console.log("Average time to generate last 10 frames: " + sum / 10 + "ms");
 }
+
+// declare animating variable, set to false to ensure no animation
 var animating = false;
 
 // The following code for sliding background pizzas was pulled from Ilya's demo found at:
@@ -526,6 +528,7 @@ function updatePositions() {
         var phase = constArray[i % 5];
         items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
     }
+    // once position is updated, set this value to false so animation does not continue
     animating = false;
 
     // User Timing API to the rescue again. Seriously, it's worth learning.
@@ -538,9 +541,10 @@ function updatePositions() {
     }
 }
 
+// activates upon scrolling
 window.addEventListener('scroll', animateScroll);
 
-// use more efficient animation method
+// use more efficient animation method, stops when animating = false
 function animateScroll() {
     'use strict';
     if (!animating) {
