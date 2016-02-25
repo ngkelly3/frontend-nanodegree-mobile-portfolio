@@ -1,10 +1,14 @@
 # Getting Started
-
-## Running the Project
 1. Check out repository
 2. Access /dist folder
 3. Run local http server/secure tunnel application (http-server/ngrok used for this project) to view optimized index.html and subsequent code
-4. Use link provided by ngrok or equivalent application to obtain score on PageInsights
+
+## Running index.html
+1. Use link provided by ngrok or equivalent application to view index.html and obtain score on PageInsights
+
+## Running src/views/js/main.js
+1. Use link provided by ngrok or equivalent application to access index.html
+2. Navigate to pizza.html from index.html
 
 ## Reviewing the Project
 All files for reviewing the project are located in **src** folder for readability.
@@ -21,7 +25,7 @@ The following grunt plugins were used in this project:
 4. uglify - minify all JS files
 5. cssmin - minify all CSS files
 
-## Running Grunt Build Tool
+### Running Grunt Build Tool
 1. Access main project folder repository
 2. Run "grunt" command to populate /dist folder from /src directory using grunt plugins
 
