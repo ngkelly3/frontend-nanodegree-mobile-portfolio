@@ -6,9 +6,12 @@
 ## Running index.html
 1. Use link provided by ngrok or equivalent application to view index.html and obtain score on PageInsights
 
-## Running src/views/js/main.js
+## Running src/views/js/main.js (pizza.html)
 1. Use link provided by ngrok or equivalent application to access index.html
 2. Navigate to pizza.html from index.html
+3. Open Chrome Developer Tools and ensure "Show FPS meter" is selected
+4. Scroll through the webpage, noting console output and FPS meter
+5. Toggle Pizza Slider to change pizza sizes, noting console output
 
 ## Reviewing the Project
 All files for reviewing the project are located in **src** folder for readability.
