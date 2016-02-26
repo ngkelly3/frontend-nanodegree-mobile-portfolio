@@ -41,12 +41,14 @@ The following grunt plugins were used in this project:
 The following optimizations were made in main.js to ensure project requirements.
 
 ### updatePositions function
-1. Reduce number of pizzas from 200 to 40
-2. Remove constant calculation from 'for' loop and apply calculation outside the loop
+1. Change document.querySelector/querySelectorAll to getElementByClass and getElementById where applicable
+2. Remove constant calculations from 'for' loop and apply calculation outside the loop
 3. Utilize requestAnimationFrame to activate updatePositions via scrolling activity
+4. Dynamically generate number of pizzas shown on window based on browser height and number of columns
+5. Use translate3d to move pizzas across the screen
+6. Apply 'use strict' for function definitions
 
 ### resizePizzas function
-
 1. Follow Cameron's Udacity "Stop FSL" lesson for guidance to achieve below 1ms time to change pizza
 (see Lesson 5, Browser Rendering Optimization, Project P4 for more information)
 2. Remove determineDx requirement and change switch statement to return a width
@@ -54,5 +56,4 @@ The following optimizations were made in main.js to ensure project requirements.
 4. Utilize 'use strict' for faster runtime
 
 ### Further Optimizations
-
 Grunt build tools were used to optimize pizza.html and associated files.
